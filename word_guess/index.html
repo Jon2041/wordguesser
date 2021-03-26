@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/word_guess.css">
+    <title>Word Guess</title>
+  </head>
+  <body>
+    <div class="game_info">
+      <p class="guess">Wrong Guesses: 0</p>
+      <ul class="alphabet">
+        <li id="a" class="">a</li>
+        <li id="b" class="">b</li>
+        <li id="c" class="">c</li>
+        <li id="d" class="">d</li>
+        <li id="e" class="">e</li>
+        <li id="f" class="">f</li>
+        <li id="g" class="">g</li>
+        <li id="h" class="">h</li>
+        <li id="i" class="">i</li>
+        <li id="j" class="">j</li>
+        <li id="k" class="">k</li>
+        <li id="l" class="">l</li>
+        <li id="m" class="">m</li>
+        <li id="n" class="">n</li>
+        <li id="o" class="">o</li>
+        <li id="p" class="">p</li>
+        <li id="q" class="">q</li>
+        <li id="r" class="">r</li>
+        <li id="s" class="">s</li>
+        <li id="t" class="">t</li>
+        <li id="u" class="">u</li>
+        <li id="v" class="">v</li>
+        <li id="w" class="">w</li>
+        <li id="x" class="">x</li>
+        <li id="y" class="">y</li>
+        <li id="z" class="">z</li>
+      </ul>
+    </div>
+    <div class="apple_tree">
+      <img id="tree" src="images/img_tree.png" alt="a tree">
+      <img src="images/img_apple.png" class="apple" id="apple1" alt="a red apple">
+      <img src="images/img_apple.png" class="apple" id="apple2" alt="a red apple">
+      <img src="images/img_apple.png" class="apple" id="apple3" alt="a red apple">
+      <img src="images/img_apple.png" class="apple" id="apple4" alt="a red apple">
+      <img src="images/img_apple.png" class="apple" id="apple5" alt="a red apple">
+      <img src="images/img_apple.png" class="apple" id="apple6" alt="a red apple">
+    </div>
+    <div class="word">
+      <p id="secretword">_____</p>
+    </div>
+    <div class="modalOverlay hidden">
+      <div id="modal" class="modal hidden">
+        <h1 data-won="You Won!" data-lost="You lost :("
+          data-gameover="GAME OVER" data-out="I'm out of words!"></h1>
+        <button class="" type="submit" id="again">Play Again</button>
+        <button class="" type="submit" id="quit">Quit</button>
+      </div>
+    </div>
+    <script src="javascripts/word_guess.js"></script>
+  </body>
+</html>
